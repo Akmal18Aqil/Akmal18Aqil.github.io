@@ -1,39 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
+ 
   <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Akmal Aqil Wahyu</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous" />
-  </head>
-  <body>
-    <div class="container">
-      <h1 class="text-center text-primary">Selamat Datang</h1>
-      <h3 class="text-center">Ini adalah List tugas divisi cyber</h3>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style/main.css" />
+    <link rel="stylesheet" href="https://dekatutorial.github.io/stylePopUp.css" />
+    <script src="./script/klik.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.4.4/dist/sweetalert2.all.min.js"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons+Sharp" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <title>Bintang-bintang</title> </head> <body id="body"> <div class="preload"><p>Loading dulu . . .</p></div> <div class="open"> <div> <div class="lope" onclick="ilang()"> <i class="love material-icons-sharp"> favorite </i> </div> <h3>Pencet Love nya</h3> </div> </div> <div id="bg"></div> <img src="" alt="" id="fotoku" />
 
-      <ul class="list-group">
-        <li class="list-group-item">
-          <input class="form-check-input me-1" type="checkbox" value="" aria-label="..." />
-          Ganti Template annur2.net | Akmal
-        </li>
-        <li class="list-group-item">
-          <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked />
-          <label class="form-check-label" for="flexCheckChecked">Web Ziaroh Rosul | Hanafi <span class="badge bg-primary">Selesai</span></label>
-        </li>
-        <li class="list-group-item">
-          <input class="form-check-input me-1" type="checkbox" value="" aria-label="..." />
-          Web Galeri | Hanafi
-        </li>
-        <!-- <li class="list-group-item">
-          <input class="form-check-input me-1" type="checkbox" value="" aria-label="..." />
-          Fourth checkbox
-        </li>
-        <li class="list-group-item">
-          <input class="form-check-input me-1" type="checkbox" value="" aria-label="..." />
-          Fifth checkbox
-        </li> -->
-      </ul>
-    </div>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
-  </body>
+<h2 id="hai">Salma Rahmi Tsurayya</h2>
+<h3 id="hia">Scrool kesamping ya</h3>
+
+<div id="slider">
+
+<p>Kau adalah alasanku menengadah ke arah yang tak berujung</p>
+<p>Genangan samudera diluar sana juga sibuk memujimu, dengan kilauan cahaya dari bening airnya</p>
+<p>Selamat! kau telah Berhasil melewati tahapan dari jalan yang kau buka.</p>>
+<p>Yang terpenting, kau harus tetap berjalan. Karena hidup adalah rangkaian proses untuk 'menjadi'</p>
+<p>aku senang jika melihat pijarmu paling terang di antara gemintang</p>>
+
+<p>Klik kado nya<span>🎁</span></p>
+
+</div> </body> <script>
+
+musik = "";
+foto = "SALMA.JPG";
+background = "langit.JPG";
+noWhatsapp = "082142858194";
+
+async function popUp() {
+
+await swalo.fire({ title: "Selamat wisuda.... ojok bodo bodo dadi arek, hehe", imageUrl: "" });
+
+kirimPesan();
+
+} $(window).on("load", function () { $(".preload").fadeOut("slow"); }); var audio = new Audio(musik); audio.autoplay = true; audio.loop = true; bg.style = 'background-image: linear-gradient(to top, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("' + background + '");'; fotoku.src = foto; popupku(); var swalo = Swal.mixin({ allowOutsideClick: false }); async function kirimPesan() { var { value: pesan } = await swalo.fire({ title: "Onok sesuatu?", input: "text", confirmButtonText: "Kirim" }); if (pesan) { await swalo.fire("Kirim ke wa yooo"); location.assign("https://api.whatsapp.com/send?phone=" + noWhatsapp + "&text=" + pesan); } else { await swalo.fire({ confirmButtonText: "Iya deh", title: "Jangan dikosongin ya :)" }); kirimPesan(); } } document.querySelector("span").addEventListener("click", function () { popUp(); }); var open = document.querySelector(".open"); function ilang() { audio.play(); open.style = "transition: 1.5s ease-out all; opacity: 0; transform: scale(100) translateY(-20px); filter: brightness(0);"; setTimeout(function () { open.style = "display:none;"; }, 1500); setTimeout(function () { fotoku.style = "opacity: 1; transition: 1s all ease; transform: translateY(0px) scale(1);"; }, 500); setTimeout(function () { hai.style = "opacity: 1; transition: 1s all ease; transform: translateY(0px);"; }, 1400); setTimeout(function () { hia.style = "opacity: 1; transition: 1s all ease; transform: translateY(0px);"; }, 1800); setTimeout(function () { slider.style = "opacity: 1; transition: 1s all ease; transform: translateY(0px) scale(1);"; }, 2200); } </script>
 </html>
